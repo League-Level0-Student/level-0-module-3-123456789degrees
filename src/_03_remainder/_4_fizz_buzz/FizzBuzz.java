@@ -26,22 +26,23 @@ public class FizzBuzz {
 	 */
 	public static void main(String[] args) {
 		
-		for( int i = 1 ; i <= 20; i++ ) {
+		for( int i = 1 ; i <= 100; i++ ) {
 			// Divisible by 3 and divisible by 5
-			if() {
-				System.out.println("FizzBuzz");
+			if(i % 3 == 0 && i % 5 == 0) {
+				System.out.print("FizzBuzz");
 			}
 			// Divisible by 3
-			else if() { 
-				System.out.println("Fizz");
+			else if(i % 3 == 0) { 
+				System.out.print("Fizz");
 			}
 			// Divisible by 5
-			else if() {
-				System.out.println("Buzz");
+			else if(i % 5 == 0) {
+				System.out.print("Buzz");
 			}
 			else {
-				System.out.println(i);
+				System.out.print(i);
 			}
+			System.out.print(' ');
 		}
 	}
 }
