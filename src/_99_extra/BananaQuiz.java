@@ -1,6 +1,7 @@
 
 package _99_extra;
 
+import javax.print.DocFlavor.STRING;
 import javax.swing.JOptionPane;
 
 public class BananaQuiz
@@ -8,6 +9,18 @@ public class BananaQuiz
 	
 	public static void main(String[] args)
 	{
+		String x = JOptionPane.showInputDialog("Do you like bananas? ");
+		if (x.equals("No") || x.equals("no") || x.equals("n")) {
+			JOptionPane.showMessageDialog(null, "YOU ARE CRAZY!!!");
+		}
+		else if (x.equals("Yes") || x.equals("yes") || x.equals("y")) {
+			String str = JOptionPane.showInputDialog("What is your favorite hobby?");
+			JOptionPane.showMessageDialog(null, str + " is much better");
+			
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You are bananas!?");
+		}
 		//1. ask the user if they like bananas
 		//2. if they say no, 
 			//tell them they are crazy 
